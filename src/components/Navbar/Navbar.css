@@ -1,0 +1,19 @@
+.navbar {
+  height: 15vh;
+  width: 100vw;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+}
+.links {
+  width: 30%;
+  display: flex;
+  gap: 30px;
+  margin-left: 20px;
+}
