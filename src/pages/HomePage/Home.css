@@ -1,12 +1,15 @@
 @import "../../components/font/fonts.css";
 .home-container {
-  background-image: url(https://www.thedailymeal.com/img/gallery/you-should-think-twice-about-bagging-your-own-groceries-at-the-store/l-intro-1681220544.jpg);
+  background-image: url(https://media.wired.com/photos/600f3b3ad721ab7365e3b9ab/master/w_2560%2Cc_limit/Business-Online-Grocery-Delivery-102759797.jpg);
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-position-y: 40%;
 }
 .home-title {
   background-color: #2e5b36;
