@@ -5,12 +5,12 @@ import logo from "../assets/shopping-cart-3045.png";
 export default function Navbar() {
   return (
     <header className="navbar">
-      <NavLink to={"/"}>
+      <NavLink to={"/home"}>
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
       <div className="links">
         <NavLink
-          to={"/"}
+          to={"/home"}
           className={({ isActive }) =>
             isActive ? "activeStyles" : "classicStyles"
           }
@@ -18,7 +18,7 @@ export default function Navbar() {
           <h2>HOME</h2>
         </NavLink>
         <NavLink
-          to={"/products"}
+          to={"/shop"}
           className={({ isActive }) =>
             isActive ? "activeStyles" : "classicStyles"
           }
