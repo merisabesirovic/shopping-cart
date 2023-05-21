@@ -42,7 +42,6 @@ export default function Products() {
   return (
     <div className="product-body">
       <div className="set-currency">
-        Set currency
         <Currency handleCurrencyChange={handleCurrencyChange} />
       </div>
       <div className="products-container">
