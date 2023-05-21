@@ -12,7 +12,7 @@ function App() {
       <Navbar></Navbar>
       <main style={{ minHeight: "75vh" }}>
         <Routes>
-          <Route path="/home" element={<Home></Home>}></Route>
+          <Route path="/" element={<Home></Home>}></Route>
           <Route path="/shop" element={<Products></Products>}></Route>
           <Route path="/cart" element={<Cart></Cart>}></Route>
         </Routes>

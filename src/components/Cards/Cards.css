@@ -1,0 +1,14 @@
+.product-name {
+  height: 55px;
+}
+.product-price {
+  font-weight: 700;
+}
+.btn-add {
+  color: #2e5b36;
+  font-weight: 600;
+}
+.btn-add:hover {
+  background-color: #2e5b36;
+  color: white;
+}
