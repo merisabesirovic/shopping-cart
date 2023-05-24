@@ -11,7 +11,7 @@ export default function Cards({
   productPrice,
   productImage,
   currencySign,
-  onPress,
+  onClick,
 }) {
   return (
     <Card sx={{ maxWidth: 450 }}>
@@ -38,7 +38,7 @@ export default function Cards({
         <CardActions>
           <Button
             style={{ color: "#2e5b36", fontWeight: "700" }}
-            onClick={onPress}
+            onClick={onClick}
             size="small"
             className="btn-add"
           >

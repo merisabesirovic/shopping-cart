@@ -5,6 +5,7 @@ import "./Products.css";
 import Currency from "../Products/Currency/Currency";
 import Pagination from "@mui/material/Pagination";
 import { AppContext } from "../../AppContext/AppCotext";
+import { toast } from "react-hot-toast";
 
 export default function Products() {
   const { product } = useContext(AppContext);
@@ -64,6 +65,9 @@ export default function Products() {
                 productName={e.title}
                 productPrice={convertCurrency(e.price)}
                 currencySign={currencySign(currency)}
+                onClick={() => {
+                  toast.success("Successfully added to cart!");
+                }}
               />
             ))
             .slice(

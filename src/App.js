@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Toaster position="bottom-right" />
+        <Toaster position="bottom-right" reverseOrder={false} />
       </div>
       <Navbar></Navbar>
       <main style={{ minHeight: "75vh" }}>
