@@ -21,7 +21,7 @@ export default function Cards({
           gutterBottom
           variant="h5"
           component="div"
-          className="product-name"
+          style={{ height: "55px" }}
         >
           {productName}
         </Typography>
@@ -30,12 +30,18 @@ export default function Cards({
           variant="h5"
           component="div"
           className="product-price"
+          style={{ fontWeight: "700" }}
         >
           {productPrice}
           {currencySign}
         </Typography>
         <CardActions>
-          <Button onClick={onPress} size="small" className="btn-add">
+          <Button
+            style={{ color: "#2e5b36", fontWeight: "700" }}
+            onClick={onPress}
+            size="small"
+            className="btn-add"
+          >
             ADD TO CART
           </Button>
         </CardActions>

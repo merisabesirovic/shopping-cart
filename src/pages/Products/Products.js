@@ -1,13 +1,21 @@
 // Products.js
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Cards from "../../components/Cards/Cards";
-import products from "../../common/product.json";
 import "./Products.css";
 import Currency from "../Products/Currency/Currency";
+import Pagination from "@mui/material/Pagination";
+import { AppContext } from "../../AppContext/AppCotext";
 
 export default function Products() {
-  const [product, setProduct] = useState(products);
+  const { product } = useContext(AppContext);
+  const { setProduct } = useContext(AppContext);
   const [currency, setCurrency] = useState(1);
+  const [page, setPage] = React.useState(1);
+  console.log(product);
+  const handleChange = (event, value) => {
+    setPage(value);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   const currencySign = (currency) => {
     switch (currency) {
       case 1:
@@ -22,11 +30,13 @@ export default function Products() {
         return "KM";
     }
   };
+  const productsPerPage = 15;
+  const numOfPages = Math.ceil((product && product.length) / productsPerPage);
 
   const convertCurrency = (el) => {
     if (currency) {
       const price = el * currency;
-      return Math.round(price, 2);
+      return Math.round(price);
     }
     return el;
   };
@@ -36,7 +46,7 @@ export default function Products() {
   };
 
   useEffect(() => {
-    setProduct(products);
+    setProduct(product);
   }, [currency]);
 
   return (
@@ -45,15 +55,29 @@ export default function Products() {
         <Currency handleCurrencyChange={handleCurrencyChange} />
       </div>
       <div className="products-container">
-        {product.map((e) => (
-          <Cards
-            key={e.id}
-            productImage={e.imageURL}
-            productName={e.title}
-            productPrice={convertCurrency(e.price)}
-            currencySign={currencySign(currency)}
-          />
-        ))}
+        {product &&
+          product
+            .map((e) => (
+              <Cards
+                key={e.id}
+                productImage={e.imageURL}
+                productName={e.title}
+                productPrice={convertCurrency(e.price)}
+                currencySign={currencySign(currency)}
+              />
+            ))
+            .slice(
+              (page - 1) * productsPerPage,
+              (page - 1) * productsPerPage + productsPerPage
+            )}
+      </div>
+      <div className="pagination">
+        <Pagination
+          size="large"
+          count={numOfPages}
+          page={page}
+          onChange={handleChange}
+        />
       </div>
     </div>
   );

@@ -7,3 +7,12 @@
 body {
   background-color: #eee;
 }
+.set-currency {
+  margin: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
