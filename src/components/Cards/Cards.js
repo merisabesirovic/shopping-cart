@@ -14,9 +14,7 @@ export default function Cards({
   productImage,
   currencySign,
   onClick,
-  quantity,
 }) {
-  const [cardQuantity, setCardQuantity] = useState(quantity);
   const [showDeleteButton, setShowDeleteButton] = useState(false);
   const handleDelete = () => {
     setShowDeleteButton(false);
