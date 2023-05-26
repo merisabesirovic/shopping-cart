@@ -8,7 +8,7 @@ import { toast } from "react-hot-toast";
 import DeleteButton from "../Products/DeleteButton";
 
 export default function Products() {
-  const { product, setProduct } = useContext(AppContext);
+  const { product, addToCart, cart } = useContext(AppContext);
   const [currency, setCurrency] = useState(1);
   const [page, setPage] = useState(1);
   const [showDeleteButton, setShowDeleteButton] = useState(false);
@@ -51,24 +51,6 @@ export default function Products() {
     setCurrency(curr);
   };
 
-  const handleCardClick = (id) => {
-    setSelectedCardId(id);
-    const updatedProduct = product.map((p) => {
-      if (p.id === id && p.quantity > 0) {
-        p.quantity--;
-        toast.success("Successfully added to cart!");
-      } else if (p.id === id) {
-        toast.error("This didn't work.");
-      }
-      return p;
-    });
-    setProduct(updatedProduct);
-  };
-
-  useEffect(() => {
-    setProduct(product);
-  }, [currency]);
-
   return (
     <div className="product-body">
       <div className="set-currency">
@@ -88,7 +70,12 @@ export default function Products() {
                 productName={e.title}
                 productPrice={convertCurrency(e.price)}
                 currencySign={currencySign(currency)}
-                onClick={() => handleCardClick(e.id)}
+                addToCart={() => {
+                  addToCart(product.id);
+                }}
+                deleteFromCart={() => {
+                  toast.success("Successfully deleted from cart!");
+                }}
               ></Cards>
             ))}
       </div>
