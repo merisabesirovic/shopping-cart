@@ -54,3 +54,7 @@
 .cart-card {
   animation: fade-in 0.3s ease-out;
 }
+
+.cartIcon {
+  margin-top: 5px;
+}
