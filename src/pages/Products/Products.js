@@ -5,14 +5,11 @@ import Currency from "../Products/Currency/Currency";
 import Pagination from "@mui/material/Pagination";
 import { AppContext } from "../../AppContext/AppCotext";
 import { toast } from "react-hot-toast";
-import DeleteButton from "../Products/DeleteButton";
 
 export default function Products() {
   const { product, addToCart, cart } = useContext(AppContext);
   const [currency, setCurrency] = useState(1);
   const [page, setPage] = useState(1);
-  const [showDeleteButton, setShowDeleteButton] = useState(false);
-  const [selectedCardId, setSelectedCardId] = useState(null);
 
   const handleChange = (event, value) => {
     setPage(value);
@@ -71,7 +68,7 @@ export default function Products() {
                 productPrice={convertCurrency(e.price)}
                 currencySign={currencySign(currency)}
                 addToCart={() => {
-                  addToCart(product.id);
+                  addToCart(e.id);
                 }}
                 deleteFromCart={() => {
                   toast.success("Successfully deleted from cart!");

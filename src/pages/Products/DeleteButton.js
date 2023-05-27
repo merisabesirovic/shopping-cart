@@ -23,7 +23,7 @@ import Chip from "@mui/joy/Chip";
 import ChipDelete from "@mui/joy/ChipDelete";
 import DeleteForever from "@mui/icons-material/DeleteForever";
 
-export default function ClickableChip({ onDelete }) {
+export default function DeleteBtn({ onDelete }) {
   const handleDelete = () => {
     onDelete();
   };

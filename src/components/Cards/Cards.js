@@ -20,15 +20,17 @@ export default function Cards({
 }) {
   const { cart } = useContext(AppContext);
   const [isAdded, setIsAdded] = useState(false);
+  // console.log(cart);
 
   useEffect(() => {
-    if (!!cart.find((product) => product.id === id)) {
+    if (cart.find((product) => product.id === id)) {
       setIsAdded(true);
+      console.log(cart);
     } else {
       setIsAdded(false);
     }
   }, [id, cart]);
-  console.log({ isAdded });
+  // console.log(isAdded);
   return (
     <Card sx={{ maxWidth: 450 }}>
       <CardMedia sx={{ height: 250 }} image={productImage} title="" />
