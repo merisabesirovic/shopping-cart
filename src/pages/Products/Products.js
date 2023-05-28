@@ -7,7 +7,7 @@ import { AppContext } from "../../AppContext/AppCotext";
 import { toast } from "react-hot-toast";
 
 export default function Products() {
-  const { product, addToCart, cart } = useContext(AppContext);
+  const { product, addToCart, cart, deleteFromCart } = useContext(AppContext);
   const [currency, setCurrency] = useState(1);
   const [page, setPage] = useState(1);
 
@@ -71,7 +71,7 @@ export default function Products() {
                   addToCart(e.id);
                 }}
                 deleteFromCart={() => {
-                  toast.success("Successfully deleted from cart!");
+                  deleteFromCart(product.id);
                 }}
               ></Cards>
             ))}
