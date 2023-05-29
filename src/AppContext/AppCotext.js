@@ -10,24 +10,24 @@ function ContextProvider({ children }) {
 
   const addToCart = (id) => {
     if (product.find((product) => product.id === id).quantity === 0) {
-      toast.error("There are no product in stock!");
+      toast.error("There are no products in stock!");
     } else {
       setProduct(
-        product.map((product) => {
-          if (product.id === id) {
+        product.map((prod) => {
+          if (prod.id === id) {
             return {
-              ...product,
-              quantity: product.quantity - 1,
+              ...prod,
+              quantity: prod.quantity - 1,
             };
           } else {
-            return product;
+            return prod;
           }
         })
       );
       setCart((prev) => [
         ...prev,
         {
-          ...product.find((product) => product.id === id),
+          ...product.find((prod) => prod.id === id),
           quantityInCart: 1,
         },
       ]);
@@ -40,14 +40,14 @@ function ContextProvider({ children }) {
       (product) => product.id === id
     ).quantityInCart;
     setProduct(
-      product.map((product) => {
-        if (product.id === id) {
+      product.map((prod) => {
+        if (prod.id === id) {
           return {
-            ...product,
-            quantity: product.quantity + quantityInCart,
+            ...prod,
+            quantity: prod.quantity + quantityInCart,
           };
         } else {
-          return product;
+          return prod;
         }
       })
     );
@@ -59,17 +59,17 @@ function ContextProvider({ children }) {
   };
 
   const increase = (id) => {
-    const product = product.find((product) => product.id === id);
-    if (product.quantity > 0) {
+    const prod = product.find((prod) => prod.id === id);
+    if (prod.quantity > 0) {
       setProduct(
-        product.map((product) => {
-          if (product.id === id) {
+        product.map((p) => {
+          if (p.id === id) {
             return {
-              ...product,
-              quantity: product.quantity - 1,
+              ...p,
+              quantity: p.quantity - 1,
             };
           } else {
-            return product;
+            return p;
           }
         })
       );
@@ -86,24 +86,24 @@ function ContextProvider({ children }) {
         })
       );
     } else {
-      toast.error("There are no product in stock!");
+      toast.error("There are no products in stock!");
     }
   };
 
   const decrease = (id) => {
-    const product = cart.find((product) => product.id === id);
-    if (product.quantityInCart === 1) {
+    const prod = cart.find((product) => product.id === id);
+    if (prod.quantityInCart === 1) {
       deleteFromCart(id);
     } else {
       setProduct(
-        product.map((product) => {
-          if (product.id === id) {
+        product.map((p) => {
+          if (p.id === id) {
             return {
-              ...product,
-              quantity: product.quantity + 1,
+              ...p,
+              quantity: p.quantity + 1,
             };
           } else {
-            return product;
+            return p;
           }
         })
       );
