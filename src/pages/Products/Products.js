@@ -49,32 +49,29 @@ export default function Products() {
   };
 
   return (
-    <div className="product-body">
+    <>
       <div className="set-currency">
         <Currency handleCurrencyChange={handleCurrencyChange} />
       </div>
       <div className="products-container">
-        {product &&
-          product
-            .slice(
-              (page - 1) * productsPerPage,
-              (page - 1) * productsPerPage + productsPerPage
-            )
-            .map((e) => (
-              <Cards
-                key={e.id}
-                productImage={e.imageURL}
-                productName={e.title}
-                productPrice={convertCurrency(e.price)}
-                currencySign={currencySign(currency)}
-                addToCart={() => {
-                  addToCart(e.id);
-                }}
-                deleteFromCart={() => {
-                  deleteFromCart(product.id);
-                }}
-              ></Cards>
-            ))}
+        {product
+          .map((product) => (
+            <Cards
+              key={product.id}
+              id={product.id}
+              productName={product.title}
+              productPrice={convertCurrency(product.price)}
+              currencySign={currencySign(currency)}
+              productImage={product.imageURL}
+              addToCart={() => {
+                addToCart(product.id);
+              }}
+              deleteFromCart={() => {
+                deleteFromCart(product.id);
+              }}
+            />
+          ))
+          .slice((page - 1) * productsPerPage, page * productsPerPage)}
       </div>
       <div className="pagination">
         <Pagination
@@ -84,6 +81,6 @@ export default function Products() {
           onChange={handleChange}
         />
       </div>
-    </div>
+    </>
   );
 }

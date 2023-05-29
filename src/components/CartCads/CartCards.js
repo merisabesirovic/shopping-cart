@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./CartCards.css";
-import DeleteBtn from "../../pages/Products/DeleteButton";
+import DeleteButton from "../../pages/Products/DeleteButton";
 import { AppContext } from "../../AppContext/AppCotext";
 
 export default function CartCards({
@@ -8,26 +8,41 @@ export default function CartCards({
   productName,
   productPrice,
   productImage,
-  quantityInCart,
+  quantity,
 }) {
-  const { deleteFromCart, increase } = useContext(AppContext);
+  const { deleteFromCart, increase, decrease } = useContext(AppContext);
+
   return (
     <div className="cart-card">
       <img className="product-image" src={productImage} alt={productName} />
       <div className="product-details">
         <h2 className="productName">Product: {productName}</h2>
-        <p className="productPrice">Price: {productPrice}$</p>
-        <p className="product-quantity">Quantity: </p>
-        <div style={{ position: "absolute", right: "10", top: "40" }}>
-          <DeleteBtn
+        <p className="productPrice">Price: {productPrice * quantity}$</p>
+        <p className="product-quantity">Quantity: {quantity}</p>
+        <div>
+          <DeleteButton
             onDelete={() => {
               deleteFromCart(id);
             }}
-          ></DeleteBtn>
+          />
         </div>
-        <div>
-          <button></button>
-        </div>
+        <button
+          onClick={() => {
+            decrease(id);
+          }}
+          style={{ width: 30 }}
+        >
+          -
+        </button>
+        <p></p>
+        <button
+          onClick={() => {
+            increase(id);
+          }}
+          style={{ width: 30 }}
+        >
+          +
+        </button>
       </div>
     </div>
   );
