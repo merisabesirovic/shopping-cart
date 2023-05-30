@@ -24,6 +24,14 @@ export default function Navbar() {
           <h2>HOME</h2>
         </NavLink>
         <NavLink
+          to={"/sale"}
+          className={({ isActive }) =>
+            isActive ? "activeStyles" : "classicStyles"
+          }
+        >
+          <h2>ON SALE</h2>
+        </NavLink>
+        <NavLink
           to={"/shop"}
           className={({ isActive }) =>
             isActive ? "activeStyles" : "classicStyles"

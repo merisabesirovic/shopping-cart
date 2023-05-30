@@ -7,6 +7,9 @@ const AppContext = createContext();
 function ContextProvider({ children }) {
   const [product, setProduct] = useState(productsJSON);
   const [cart, setCart] = useState([]);
+  const [onSale, setOnSale] = useState(
+    productsJSON.filter((product) => product.quantity > 20)
+  );
 
   const addToCart = (id) => {
     if (product.find((product) => product.id === id).quantity === 0) {
@@ -130,6 +133,7 @@ function ContextProvider({ children }) {
     deleteFromCart,
     increase,
     decrease,
+    onSale,
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 }

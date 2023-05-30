@@ -32,9 +32,9 @@ export default function DeleteBtn({ onDelete }) {
       <Chip
         variant="outlined"
         color="danger"
-        onClick={handleDelete}
+        onClick={() => alert("Are you sure you want to delete?")}
         endDecorator={
-          <ChipDelete color="danger" variant="plain">
+          <ChipDelete color="danger" variant="plain" onClick={handleDelete}>
             <DeleteForever />
           </ChipDelete>
         }

@@ -1,16 +1,18 @@
 import React, { useState, useEffect, useContext } from "react";
 import Cards from "../../components/Cards/Cards";
-import "./Products.css";
+import "./OnSale.css";
 import Currency from "../Products/Currency/Currency";
 import Pagination from "@mui/material/Pagination";
 import { AppContext } from "../../AppContext/AppCotext";
 import { toast } from "react-hot-toast";
+import BasicCard from "../../components/OnSaleCards/OnSaleCard";
 
-export default function Products() {
+export default function OnSale() {
   const { product, addToCart, cart, deleteFromCart } = useContext(AppContext);
   const [currency, setCurrency] = useState(1);
   const [page, setPage] = useState(1);
-
+  const { onSale } = useContext(AppContext);
+  console.log(onSale);
   const handleChange = (event, value) => {
     setPage(value);
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -34,7 +36,7 @@ export default function Products() {
   };
 
   const productsPerPage = 15;
-  const numOfPages = Math.ceil((product && product.length) / productsPerPage);
+  const numOfPages = Math.ceil((onSale && onSale.length) / productsPerPage);
 
   const convertCurrency = (el) => {
     if (currency) {
@@ -54,10 +56,9 @@ export default function Products() {
         <Currency handleCurrencyChange={handleCurrencyChange} />
       </div>
       <div className="products-container">
-        {product
-          .filter((product) => product.quantity <= 20)
+        {onSale
           .map((product) => (
-            <Cards
+            <BasicCard
               key={product.id}
               id={product.id}
               productName={product.title}
