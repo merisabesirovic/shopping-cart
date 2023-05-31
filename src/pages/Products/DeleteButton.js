@@ -28,7 +28,9 @@ export default function DeleteBtn({ onDelete }) {
     onDelete();
   };
   return (
-    <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+    <Box
+      sx={{ display: "flex", gap: 1, alignItems: "center", margin: "0px 60px" }}
+    >
       <Chip
         variant="outlined"
         color="danger"

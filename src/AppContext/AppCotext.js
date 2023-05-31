@@ -7,10 +7,28 @@ const AppContext = createContext();
 function ContextProvider({ children }) {
   const [product, setProduct] = useState(productsJSON);
   const [cart, setCart] = useState([]);
-  const [onSale, setOnSale] = useState(
+  const [onSale] = useState(
     productsJSON.filter((product) => product.quantity > 20)
   );
-
+  const currencySign = (currency) => {
+    switch (currency) {
+      case 1:
+        return "$";
+      case 0.92:
+        return "€";
+      case 108.36:
+        return "din";
+      case 6.97:
+        return "kn";
+      case 1.81:
+        return "KM";
+      default:
+        return "";
+    }
+  };
+  const putDot = (num) => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  };
   const addToCart = (id) => {
     if (product.find((product) => product.id === id).quantity === 0) {
       toast.error("There are no products in stock!");
@@ -134,6 +152,8 @@ function ContextProvider({ children }) {
     increase,
     decrease,
     onSale,
+    putDot,
+    currencySign,
   };
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;
 }

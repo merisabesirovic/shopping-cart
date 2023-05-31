@@ -1,0 +1,28 @@
+@import "../../components/font/fonts.css";
+.korpa {
+  font-size: 3.5rem;
+  font-family: "Anton", sans-serif;
+  color: #2e5b36;
+  margin: 10px;
+  text-align: center;
+  border-bottom: 1px solid green;
+  justify-self: center;
+}
+
+.cartCardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+}
+.korpa-k {
+  font-family: "Anton", sans-serif;
+  background-color: #2e5b36;
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #ffffff;
+  padding-top: 10px;
+  padding: 10px;
+}

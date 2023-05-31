@@ -20,7 +20,7 @@ export default function BasicCard({
   addToCart,
   deleteFromCart,
 }) {
-  const { cart } = useContext(AppContext);
+  const { cart, putDot } = useContext(AppContext);
   const [isAdded, setIsAdded] = useState(false);
   useEffect(() => {
     if (cart.find((product) => product.id === id)) {
@@ -67,7 +67,7 @@ export default function BasicCard({
         <div>
           <Typography level="body3">Total price:</Typography>
           <Typography fontSize="lg" fontWeight="lg">
-            {productPrice}
+            {putDot(productPrice)}
             {currencySign}
           </Typography>
         </div>

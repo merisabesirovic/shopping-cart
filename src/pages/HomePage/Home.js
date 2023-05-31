@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-container">
       <div className="home-text">
         <h1 className="home-title">
-          Fresh Food<br></br> & Grocery shopping
+          Big outlet<br></br> & Grocery shopping
         </h1>
         <p className="smaller-text">
           <a className="products" href="/shop">

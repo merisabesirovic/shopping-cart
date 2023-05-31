@@ -18,7 +18,7 @@ export default function Cards({
   addToCart,
   deleteFromCart,
 }) {
-  const { cart } = useContext(AppContext);
+  const { cart, putDot } = useContext(AppContext);
   const [isAdded, setIsAdded] = useState(false);
   // console.log(cart);
 
@@ -50,17 +50,12 @@ export default function Cards({
           className="product-price"
           style={{ fontWeight: "700" }}
         >
-          {productPrice}
+          {putDot(productPrice)}
           {currencySign}
         </Typography>
         <CardActions style={{ display: "flex", justifyContent: "center" }}>
           {!isAdded ? (
-            <Button
-              style={{ color: "#2e5b36", fontWeight: "700" }}
-              onClick={addToCart}
-              size="small"
-              className="btn-add"
-            >
+            <Button onClick={addToCart} size="small" className="btn-add">
               ADD TO CART
             </Button>
           ) : (
