@@ -9,11 +9,12 @@
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  border: 5px groove #ff6550;
+  border: 3px groove #ff6550;
   background-color: #f26565;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 800;
 }
 
 .l-icon {
