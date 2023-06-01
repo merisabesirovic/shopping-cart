@@ -77,7 +77,11 @@ export default function CartCards({
               </Typography>
               <div
                 className="buttons"
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  gap: "20px",
+                }}
               >
                 <Button
                   onClick={() => {

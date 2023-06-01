@@ -63,7 +63,7 @@ export default function BasicCard({
           alt=""
         />
       </AspectRatio>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <div>
           <Typography level="body3">Total price:</Typography>
           <Typography fontSize="lg" fontWeight="lg">
