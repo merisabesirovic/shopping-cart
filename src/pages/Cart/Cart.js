@@ -71,6 +71,8 @@ export default function Cart() {
             />
           ))}
           <p
+            className="korpa-k"
+            style={{ margin: "20px auto", cursor: "pointer" }}
             onClick={() =>
               navigation("/order", {
                 state: {
@@ -79,7 +81,7 @@ export default function Cart() {
               })
             }
           >
-            BUY
+            BUY NOW
           </p>
         </div>
       ) : (
@@ -108,7 +110,7 @@ export default function Cart() {
                 textDecoration: "none",
                 fontWeight: "700",
               }}
-              href="products"
+              href="shop"
             >
               Go shopping
             </a>

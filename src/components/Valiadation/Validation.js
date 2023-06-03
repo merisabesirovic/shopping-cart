@@ -1,5 +1,4 @@
 import React from "react";
-import From from "./FormValidation/From";
 import "./Validation.css";
 import PaymentValidation from "./PaymentValidation/PaymentValidation";
 
@@ -12,11 +11,9 @@ export default function Validation() {
       </h1>
       <div className="form-group">
         <div>
-          <From></From>
-        </div>
-        <div>
           <PaymentValidation></PaymentValidation>
         </div>
+        <div></div>
       </div>
     </div>
   );

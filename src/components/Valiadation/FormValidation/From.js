@@ -7,7 +7,6 @@ const Basic = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const handleSubmit = (values, { setSubmitting }) => {
-    // Your custom logic goes here
     setIsFormSubmitted(true);
     setSubmitting(false);
   };
