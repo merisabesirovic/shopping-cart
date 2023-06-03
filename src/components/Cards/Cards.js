@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./Cards.css";
 import DeleteBtn from "../../pages/Products/DeleteButton";
@@ -50,14 +49,15 @@ export default function Cards({
           className="product-price"
           style={{ fontWeight: "700" }}
         >
+          <p className="ttl">Total price:</p>
           {putDot(productPrice)}
           {currencySign}
         </Typography>
         <CardActions style={{ display: "flex", justifyContent: "center" }}>
           {!isAdded ? (
-            <Button onClick={addToCart} size="small" className="btn-add">
+            <button onClick={addToCart} className="btn-add">
               ADD TO CART
-            </Button>
+            </button>
           ) : (
             <DeleteBtn onDelete={deleteFromCart} />
           )}

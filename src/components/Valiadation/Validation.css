@@ -1,0 +1,16 @@
+.validation-container {
+  background-color: rgb(121, 174, 121);
+  width: 100vw;
+  height: max-content;
+}
+.korpa-k {
+  margin-top: 0;
+  width: fit-content;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+

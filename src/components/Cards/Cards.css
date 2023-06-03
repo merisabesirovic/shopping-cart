@@ -7,8 +7,15 @@
 .btn-add {
   color: #2e5b36;
   font-weight: 600;
+  border: none;
+  padding: 8px;
+  transition: background-color 0.3s ease;
 }
 .btn-add:hover {
   background-color: #2e5b36;
   color: white;
+}
+.ttl {
+  font-size: 12px;
+  font-weight: 300;
 }

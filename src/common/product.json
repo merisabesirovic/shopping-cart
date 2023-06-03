@@ -6,7 +6,7 @@
     "price": 20,
     "quantity": 13,
     "total": 60,
-    "discountPercentage": 8.71,
+    "discountPercentage": 20,
     "discountedPrice": 55
   },
   {
@@ -16,7 +16,7 @@
     "price": 29,
     "quantity": 7,
     "total": 58,
-    "discountPercentage": 3.19,
+    "discountPercentage": 20,
     "discountedPrice": 56
   },
   {
@@ -26,7 +26,7 @@
     "price": 40,
     "quantity": 34,
     "total": 80,
-    "discountPercentage": 13.1,
+    "discountPercentage": 30,
     "discountedPrice": 70
   },
   {
@@ -36,7 +36,7 @@
     "price": 930,
     "quantity": 23,
     "total": 930,
-    "discountPercentage": 17.67,
+    "discountPercentage": 40,
     "discountedPrice": 766
   },
   {
@@ -46,7 +46,7 @@
     "price": 600,
     "quantity": 17,
     "total": 1200,
-    "discountPercentage": 17.2,
+    "discountPercentage": 50,
     "discountedPrice": 994
   },
   {
@@ -56,7 +56,7 @@
     "price": 569,
     "quantity": 3,
     "total": 1707,
-    "discountPercentage": 13.63,
+    "discountPercentage": 40,
     "discountedPrice": 1474
   },
   {
@@ -66,7 +66,7 @@
     "price": 1099,
     "quantity": 11,
     "total": 1099,
-    "discountPercentage": 11.83,
+    "discountPercentage": 40,
     "discountedPrice": 969
   },
   {
@@ -76,7 +76,7 @@
     "price": 19,
     "quantity": 5,
     "total": 19,
-    "discountPercentage": 13.31,
+    "discountPercentage": 30,
     "discountedPrice": 16
   },
   {
@@ -86,7 +86,7 @@
     "price": 45,
     "quantity": 7,
     "total": 135,
-    "discountPercentage": 17.75,
+    "discountPercentage": 30,
     "discountedPrice": 111
   },
   {
@@ -96,7 +96,7 @@
     "price": 57,
     "quantity": 34,
     "total": 171,
-    "discountPercentage": 9.03,
+    "discountPercentage": 20,
     "discountedPrice": 156
   },
   {
@@ -106,7 +106,7 @@
     "price": 19,
     "quantity": 14,
     "total": 19,
-    "discountPercentage": 10.1,
+    "discountPercentage": 10,
     "discountedPrice": 17
   },
   {
@@ -116,7 +116,7 @@
     "price": 35,
     "quantity": 32,
     "total": 35,
-    "discountPercentage": 11.08,
+    "discountPercentage": 10,
     "discountedPrice": 31
   },
   {
@@ -126,7 +126,7 @@
     "price": 13,
     "quantity": 23,
     "total": 39,
-    "discountPercentage": 8.4,
+    "discountPercentage": 30,
     "discountedPrice": 36
   },
   {
@@ -136,7 +136,7 @@
     "price": 120,
     "quantity": 21,
     "total": 240,
-    "discountPercentage": 10.37,
+    "discountPercentage": 30,
     "discountedPrice": 215
   },
   {
@@ -146,7 +146,7 @@
     "price": 46,
     "quantity": 36,
     "total": 138,
-    "discountPercentage": 10.2,
+    "discountPercentage": 20,
     "discountedPrice": 124
   },
   {
@@ -156,7 +156,7 @@
     "price": 50,
     "quantity": 28,
     "total": 100,
-    "discountPercentage": 5.07,
+    "discountPercentage": 30,
     "discountedPrice": 95
   },
   {
@@ -166,7 +166,7 @@
     "price": 28,
     "quantity": 91,
     "total": 28,
-    "discountPercentage": 13.89,
+    "discountPercentage": 30,
     "discountedPrice": 24
   },
   {
@@ -176,7 +176,7 @@
     "price": 35,
     "quantity": 3,
     "total": 105,
-    "discountPercentage": 8.98,
+    "discountPercentage": 20,
     "discountedPrice": 96
   },
   {
@@ -186,7 +186,7 @@
     "price": 35,
     "quantity": 41,
     "total": 105,
-    "discountPercentage": 7.54,
+    "discountPercentage": 20,
     "discountedPrice": 97
   },
   {
@@ -196,7 +196,7 @@
     "price": 120,
     "quantity": 2,
     "total": 240,
-    "discountPercentage": 7.14,
+    "discountPercentage": 20,
     "discountedPrice": 223
   },
   {
@@ -206,7 +206,7 @@
     "price": 920,
     "quantity": 1,
     "total": 920,
-    "discountPercentage": 14.4,
+    "discountPercentage": 20,
     "discountedPrice": 788
   },
   {
@@ -216,7 +216,7 @@
     "price": 46,
     "quantity": 35,
     "total": 138,
-    "discountPercentage": 8.84,
+    "discountPercentage": 30,
     "discountedPrice": 126
   },
   {
@@ -226,7 +226,7 @@
     "price": 30,
     "quantity": 13,
     "total": 30,
-    "discountPercentage": 14.89,
+    "discountPercentage": 30,
     "discountedPrice": 26
   },
   {
@@ -236,7 +236,7 @@
     "price": 899,
     "quantity": 22,
     "total": 899,
-    "discountPercentage": 17.94,
+    "discountPercentage": 20,
     "discountedPrice": 738
   },
   {
@@ -246,7 +246,7 @@
     "price": 13,
     "quantity": 14,
     "total": 13,
-    "discountPercentage": 8.14,
+    "discountPercentage": 20,
     "discountedPrice": 12
   },
   {
@@ -256,7 +256,7 @@
     "price": 1249,
     "quantity": 33,
     "total": 3747,
-    "discountPercentage": 15.46,
+    "discountPercentage": 20,
     "discountedPrice": 3168
   },
   {
@@ -266,7 +266,7 @@
     "price": 1499,
     "quantity": 12,
     "total": 1499,
-    "discountPercentage": 4.15,
+    "discountPercentage": 40,
     "discountedPrice": 1437
   },
   {
@@ -276,7 +276,7 @@
     "price": 70,
     "quantity": 21,
     "total": 140,
-    "discountPercentage": 13.58,
+    "discountPercentage": 40,
     "discountedPrice": 121
   },
   {
@@ -286,7 +286,7 @@
     "price": 47,
     "quantity": 31,
     "total": 141,
-    "discountPercentage": 17.79,
+    "discountPercentage": 40,
     "discountedPrice": 116
   },
   {
@@ -296,7 +296,7 @@
     "price": 57,
     "quantity": 14,
     "total": 57,
-    "discountPercentage": 12,
+    "discountPercentage": 40,
     "discountedPrice": 50
   },
   {
@@ -306,7 +306,7 @@
     "price": 47,
     "quantity": 13,
     "total": 47,
-    "discountPercentage": 17.55,
+    "discountPercentage": 40,
     "discountedPrice": 39
   },
   {
@@ -316,7 +316,7 @@
     "price": 60,
     "quantity": 2,
     "total": 120,
-    "discountPercentage": 16.69,
+    "discountPercentage": 40,
     "discountedPrice": 100
   },
   {
@@ -326,7 +326,7 @@
     "price": 60,
     "quantity": 3,
     "total": 180,
-    "discountPercentage": 15.34,
+    "discountPercentage": 40,
     "discountedPrice": 152
   },
   {
@@ -336,7 +336,7 @@
     "price": 70,
     "quantity": 22,
     "total": 140,
-    "discountPercentage": 13.57,
+    "discountPercentage": 40,
     "discountedPrice": 121
   },
   {
@@ -346,7 +346,7 @@
     "price": 30,
     "quantity": 42,
     "total": 60,
-    "discountPercentage": 2.92,
+    "discountPercentage": 30,
     "discountedPrice": 58
   },
   {
@@ -356,7 +356,7 @@
     "price": 900,
     "quantity": 12,
     "total": 1800,
-    "discountPercentage": 3.85,
+    "discountPercentage": 30,
     "discountedPrice": 1731
   },
   {
@@ -366,7 +366,7 @@
     "price": 47,
     "quantity": 32,
     "total": 141,
-    "discountPercentage": 16,
+    "discountPercentage": 30,
     "discountedPrice": 118
   },
   {
@@ -376,7 +376,7 @@
     "price": 549,
     "quantity": 22,
     "total": 1098,
-    "discountPercentage": 12.96,
+    "discountPercentage": 30,
     "discountedPrice": 956
   },
   {
@@ -386,7 +386,7 @@
     "price": 25,
     "quantity": 71,
     "total": 25,
-    "discountPercentage": 10.56,
+    "discountPercentage": 30,
     "discountedPrice": 22
   },
   {
@@ -396,7 +396,7 @@
     "price": 35,
     "quantity": 15,
     "total": 35,
-    "discountPercentage": 10.94,
+    "discountPercentage": 30,
     "discountedPrice": 31
   },
   {
@@ -406,7 +406,7 @@
     "price": 100,
     "quantity": 35,
     "total": 300,
-    "discountPercentage": 3.22,
+    "discountPercentage": 20,
     "discountedPrice": 290
   },
   {
@@ -416,7 +416,7 @@
     "price": 40,
     "quantity": 32,
     "total": 80,
-    "discountPercentage": 17,
+    "discountPercentage": 20,
     "discountedPrice": 66
   },
   {
@@ -426,7 +426,7 @@
     "price": 68,
     "quantity": 43,
     "total": 204,
-    "discountPercentage": 14.87,
+    "discountPercentage": 20,
     "discountedPrice": 174
   },
   {
@@ -436,7 +436,7 @@
     "price": 50,
     "quantity": 31,
     "total": 50,
-    "discountPercentage": 15.59,
+    "discountPercentage": 20,
     "discountedPrice": 42
   }
 ]
