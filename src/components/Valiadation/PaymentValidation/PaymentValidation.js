@@ -217,7 +217,9 @@ const PaymentForm = () => {
       )}
       {isOrderPlaced && (
         <div className="order-placed-message">
-          <p>Your order has been placed!</p>
+          <p style={{ color: "white", fontWeight: "700" }}>
+            Your order has been placed!
+          </p>
         </div>
       )}
     </div>
