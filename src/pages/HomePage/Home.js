@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Home.css";
 
 export default function Home() {
@@ -8,11 +10,11 @@ export default function Home() {
         <h1 className="home-title">
           Big outlet<br></br> & Grocery shopping
         </h1>
-        <p className="smaller-text">
-          <a className="products" href="/shop">
-            Check our products
-          </a>
-        </p>
+        <div className="smaller-text">
+          <NavLink to={"/shop"}>
+            <p className="products">Check our products</p>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
